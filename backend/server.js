@@ -46,7 +46,7 @@ app.get('/',(req,res)=>{
 
 cron.schedule('*/1 * * * *', async () => {
     try {
-        const response = await axios.get(`${ 'https://blog-hdnp.onrender.com/' || `http://localhost:${PORT}`}/`, {
+        const response = await axios.get(`${ 'https://blog-hdnp.onrender.com' || `http://localhost:${PORT}`}/`, {
             family: 4  // Force IPv4
         });
         console.log('Pinged the server:', response.data);

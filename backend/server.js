@@ -6,7 +6,7 @@ import blogRoute from "./routes/blog.route.js"
 import commentRoute from "./routes/comment.route.js"
 import cookieParser from 'cookie-parser';
 import cors from 'cors'
-import path from "path"
+// import path from "path"
 
 dotenv.config()
 const app = express()
@@ -24,17 +24,17 @@ app.use(cors({
     credentials:true
 }))
 
-const _dirname = path.resolve()
+// const _dirname = path.resolve()
 
 // apis
  app.use("/api/v1/user", userRoute)
  app.use("/api/v1/blog", blogRoute)
  app.use("/api/v1/comment", commentRoute)
 
- app.use(express.static(path.join(_dirname,"/frontend/dist")));
- app.get("*", (_, res)=>{
-    res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
- });
+//  app.use(express.static(path.join(_dirname,"/frontend/dist")));
+//  app.get("*", (_, res)=>{
+//     res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
+//  });
 
 app.listen(PORT, ()=>{
     console.log(`Server listen at port ${PORT}`);

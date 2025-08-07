@@ -23,33 +23,45 @@ A full-stack MERN Blog application where users can create, edit, delete blogs, l
 
 ## 🧠 Tech Stack
 
-- **Frontend**: React, Tailwind CSS, Context API
-- **Backend**: Node.js, Express.js, MongoDB
-- **Authentication**: JWT (JSON Web Token)
-- **Deployment**: Render
+| Frontend     | Backend            | Authentication | Deployment |
+| ------------ | ------------------ | -------------- | ---------- |
+| React.js     | Express.js         | JWT            | Render     |
+| Tailwind CSS | MongoDB (Mongoose) | bcrypt         |            |
+| Context API  | Node.js            |                |            |
+
+
 
 ---
 
 ## 📁 Project Setup
+## 📦 Installation
 
-### 🔧 Backend Setup
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/samipevekar/Blog.git
+cd Blog
+```
+
+👋 Frontend Setup
+```bash
+cd frontend
+npm installl
+```
+
+🔧 Backend Setup
 
 ```bash
 cd backend
 npm install
+```
 
-cd frontend
-npm install
-
+### Env Setup (backend) 
+```bash
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
-cd backend
-npm run dev
-
-cd frontend
-npm start
-
-
-
+## 🧑‍💻 Author
+Made with ❤️ by Awsiyan Waghe

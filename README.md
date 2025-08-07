@@ -6,7 +6,7 @@ A full-stack MERN Blog application where users can create, edit, delete blogs, l
 
 ## 🔗 Live Links
 
-- 👤 **User Panel**: [https://blog-1-b8t3.onrender.com/login](https://blog-1-b8t3.onrender.com/login)
+- 👤 **User Panel**: (https://blog-1-b8t3.onrender.com)
 
 ---
 
